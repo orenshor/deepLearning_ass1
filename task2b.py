@@ -23,15 +23,9 @@ from sklearn.metrics import confusion_matrix,accuracy_score,log_loss
 import seaborn as sns
 
 # Model configuration
-batch_size = 50
 img_width, img_height, img_num_channels = 32, 32, 3
 num_classes = 100
-num_epochs = 100
-# optimizer = Adam()
-validation_split = 0.2
-verbosity = 1
-L2_DECAY_RATE = 0.0005
-INIT_DROPOUT_RATE = 0.5
+
 
 CIFAR100_LABELS_LIST = [
     'apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 
